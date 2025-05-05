@@ -41,7 +41,7 @@ jobs:
           pylint --fail-under=7 app services tests
 
       - name: Run unittest
-        run: python -m unittest discover -s tests
+        run: python -m unittest
 
       - name: Run integration tests (pytest)
         run: |

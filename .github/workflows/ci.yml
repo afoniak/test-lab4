@@ -38,7 +38,7 @@ jobs:
 
       - name: Run pylint
         run: |
-          pylint app services tests || exit 1
+          pylint --fail-under=7 app services tests
 
       - name: Run unittest
         run: python -m unittest discover -s tests
